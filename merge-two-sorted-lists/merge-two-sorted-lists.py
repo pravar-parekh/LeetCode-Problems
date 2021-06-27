@@ -3,6 +3,27 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+'''
+    Iterative Solution:
+    
+    Params:-
+        l1 : ListNode
+            Head of List 1
+        l2 : ListNode
+            Head of List 2
+    
+    Returns:-
+        head : ListNode
+            Head of the Solution List
+    
+    Summary:-
+        If the l1 or l2 is empty return the other one. We set the head of our solution to
+        the element which is lesser between the heads of both the lists. Then iteratively
+        check if l1 < l2 or vice versa. Insert its pointer to the solution list and move
+        the solution and the chosen list to its next element. Once we reach the end of
+        either lists l1 or l2, we simply put the next pointer of the list which hasn't been
+        completed to the solution list and return the head.
+'''
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         
