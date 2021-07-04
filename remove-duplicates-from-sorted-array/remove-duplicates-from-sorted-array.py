@@ -14,6 +14,9 @@
         the current element i.e. it is a duplicate we just increment the pointer. Else, we then
         replace the element on the replacePointer with element on the checkPointer. This shifts
         the non duplicate elements to their final place.
+        
+        We could also do this using the set() function in python, which should be faster. But I
+        feel thats not in the spirit of LeetCode.
 '''
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
