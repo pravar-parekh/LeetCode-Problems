@@ -1,3 +1,10 @@
+'''
+    ****Hash Table Method****
+    
+    Summary:-
+        Store the count for each number in a hashtable. Then return the number for which
+        count > half.
+'''
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         hashtable = dict()
