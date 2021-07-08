@@ -1,10 +1,12 @@
+'''
+    Summary:- 
+    https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/discuss/344583/Python%3A-O(1)-space-solution
+'''
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
-        numSet = set(nums)
-        notPresent = []
         
-        for i in range(1, len(nums)+1):
-            if i not in numSet:
-                notPresent.append(i)
-                
-        return notPresent
+        for i in range(len(nums)):
+            temp = abs(nums[i]) - 1
+            nums[temp] = -abs(nums[temp])
+            
+        return [i+1 for i,v in enumerate(nums) if v >= 0]
