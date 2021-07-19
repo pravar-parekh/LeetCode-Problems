@@ -1,3 +1,12 @@
+"""
+    Summary:- 
+        This can be done using back tracking by creating a dfs function. I have done it iteratively,
+        in O(3^n). 
+        
+        I first created a list of mapping for the digits to letters. Then iterated through the given
+        digits. For each letter that is represented by the digit, we add that letter to each combination 
+        we already have found in the output.
+"""
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         mapping = [
