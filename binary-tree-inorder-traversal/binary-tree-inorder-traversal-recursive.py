@@ -4,6 +4,10 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+'''
+Summary:-
+    Recursiver Approach
+'''
 class Solution:
     def __init__(self):
         self.traversal = []
