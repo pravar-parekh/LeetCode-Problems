@@ -7,7 +7,13 @@ class Node:
         self.right = right
         self.next = next
 """
-
+'''
+Summary:- 
+    ##### BFS METHOD #####
+    
+    Use queue, add a seperator for each new level. Then for each same level fill out the next pointer of
+    the nodes. This traverses the tree in BFS manner.
+'''
 class Solution:
     def connect(self, root: 'Node') -> 'Node':
         if not root:
