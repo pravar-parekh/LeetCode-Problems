@@ -1,3 +1,12 @@
+"""
+Summary:-
+    Use DFS or BFS, Here its DFS. Create two subsets. 1 from pacific ocean and 2 from atlantic.
+    Add in the subsets all the elements reachable to the ocean. We can start from the elements
+    on the border of the two oceans, then head inside using dfs. If the next element is greater
+    than previous element, then its reachable from the previous element. Do this for all border
+    elements and we have two sets. Intersection of the two sets is the answer.
+"""
+
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         
