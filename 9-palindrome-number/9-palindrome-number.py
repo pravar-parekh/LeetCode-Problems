@@ -6,7 +6,6 @@ class Solution:
         while(temp > 0):
             reverseNum = reverseNum*10 + temp%10
             temp //= 10
-            print(temp)
             
         if reverseNum == x:
             return True
